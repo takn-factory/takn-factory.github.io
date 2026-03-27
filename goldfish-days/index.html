@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>きんぎょ日和　～金魚と花火の癒し水槽～</title>
+  <meta name="description" content="のんびり金魚と暮らそう">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<div class="light-rays"></div>
+<div class="bubbles">
+  <span style="left:5%;  --size:18px; --duration:11s; --delay:0s;   --drift:40px;"></span>
+  <span style="left:15%; --size:10px; --duration:14s; --delay:2s;   --drift:-30px;"></span>
+  <span style="left:30%; --size:24px; --duration:12s; --delay:1s;   --drift:60px;"></span>
+  <span style="left:45%; --size:8px;  --duration:16s; --delay:4s;   --drift:-20px;"></span>
+  <span style="left:60%; --size:14px; --duration:10s; --delay:0.5s; --drift:35px;"></span>
+  <span style="left:72%; --size:20px; --duration:13s; --delay:3s;   --drift:-50px;"></span>
+  <span style="left:85%; --size:12px; --duration:15s; --delay:1.5s; --drift:25px;"></span>
+  <span style="left:92%; --size:16px; --duration:11s; --delay:5s;   --drift:-40px;"></span>
+</div>
+
+<div class="container">
+
+  <h1>きんぎょ日和～金魚と花火の癒し水槽～</h1>
+  <p class="lead">水槽に金魚を迎えて、のんびり育てる癒しの育成ゲームです。</p>
+
+  <div class="card fade-in">
+    <h2>ゲーム紹介</h2>
+    <p>エサをあげて、なでて、大きく育てましょう。<br>放置していても金魚たちは元気に泳いでくれます。</p>
+    <ul>
+      <li>温かみのある切り絵風アートで描かれた金魚や水草たち</li>
+      <li>約200種類のアンロック可能なアイテムでコレクション要素も充実</li>
+      <li>和金、デメキン、らんちゅうなど個性豊かな金魚たち</li>
+      <li>一匹一匹に性格があり、同じ品種でも個性が違います</li>
+      <li>仲良くなった金魚同士から「なかよしタマゴ」が生まれることも</li>
+      <li>お気に入りの写真やイラストを金魚のスキンにできます</li>
+      <li>水草や流木、岩、背景、床砂、ライトで自分だけの水槽を作りましょう</li>
+    </ul>
+  </div>
+
+  <div class="fade-in">
+    <h2>動画</h2>
+    <div style="max-width:360px;">
+      <iframe width="100%" height="640" src="https://www.youtube.com/embed/aGVUXLWQl3E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius:12px;"></iframe>
+    </div>
+  </div>
+
+  <div class="fade-in">
+    <h2>スクリーンショット</h2>
+    <div class="screenshot-grid">
+      <img src="../assets/images/screenshot_01.png" alt="スクリーンショット1">
+      <img src="../assets/images/screenshot_02.png" alt="スクリーンショット2">
+      <img src="../assets/images/screenshot_03.png" alt="スクリーンショット3">
+      <img src="../assets/images/screenshot_04.png" alt="スクリーンショット4">
+      <img src="../assets/images/screenshot_05.png" alt="スクリーンショット5">
+    </div>
+  </div>
+
+  <div class="fade-in">
+    <h2>ダウンロード</h2>
+    <a class="download-btn" href="https://apps.apple.com/us/app/goldfish-days-zen-aquarium/id6759545083" target="_blank" rel="noopener noreferrer">App Store からダウンロード</a>
+  </div>
+
+  <div class="card fade-in">
+    <h2>お問い合わせ</h2>
+    <p>ご質問・不具合報告・ご要望は下記メールアドレスまでお気軽にご連絡ください。</p>
+    <p><strong>メール:</strong> takn.factory@gmail.com</p>
+  </div>
+
+  <footer>
+    <a href="privacy">プライバシーポリシー</a>
+    <!-- <a href="presskit">プレスキット</a> -->
+    <br>&copy; 2026 Takn Factory
+  </footer>
+
+</div>
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.15 });
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>プライバシーポリシー - きんぎょ日和</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<div class="light-rays"></div>
+<div class="bubbles">
+  <span style="left:5%;  --size:18px; --duration:11s; --delay:0s;   --drift:40px;"></span>
+  <span style="left:15%; --size:10px; --duration:14s; --delay:2s;   --drift:-30px;"></span>
+  <span style="left:30%; --size:24px; --duration:12s; --delay:1s;   --drift:60px;"></span>
+  <span style="left:45%; --size:8px;  --duration:16s; --delay:4s;   --drift:-20px;"></span>
+  <span style="left:60%; --size:14px; --duration:10s; --delay:0.5s; --drift:35px;"></span>
+  <span style="left:72%; --size:20px; --duration:13s; --delay:3s;   --drift:-50px;"></span>
+  <span style="left:85%; --size:12px; --duration:15s; --delay:1.5s; --drift:25px;"></span>
+  <span style="left:92%; --size:16px; --duration:11s; --delay:5s;   --drift:-40px;"></span>
+</div>
+
+<div class="container">
+
+  <h1>プライバシーポリシー</h1>
+  <p class="lead">最終更新日: 2026年3月6日</p>
+  <p>Takn Factory（以下「当方」）が提供するアプリ「きんぎょ日和～金魚と花火の癒し水槽～」（以下「本アプリ」）におけるプライバシーポリシーを以下に定めます。</p>
+
+  <div class="card fade-in">
+    <h2>1. 収集する情報</h2>
+    <p>本アプリは、ユーザーの個人情報（氏名、メールアドレス等）を直接収集することはありません。</p>
+    <p>ただし、本アプリでは広告配信のために第三者のサービスを利用しており、当該サービスが以下の情報を自動的に収集する場合があります。</p>
+    <ul>
+      <li>広告識別子（IDFA / GAID）</li>
+      <li>デバイス情報（機種、OS バージョン等）</li>
+      <li>IPアドレス</li>
+      <li>アプリの利用状況</li>
+    </ul>
+  </div>
+
+  <div class="card fade-in">
+    <h2>2. 第三者サービス</h2>
+    <p>本アプリは以下の第三者サービスを利用しています。各サービスのプライバシーポリシーをご確認ください。</p>
+    <ul>
+      <li><strong>Google AdMob</strong>（広告配信）
+        <ul>
+          <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google プライバシーポリシー</a></li>
+          <li><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">Google の広告に関するポリシー</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="card fade-in">
+    <h2>3. データの保存</h2>
+    <p>ゲームのセーブデータはお使いのデバイス内にのみ保存されます。当方のサーバーにユーザーデータを送信・保存することはありません。</p>
+  </div>
+
+  <div class="card fade-in">
+    <h2>4. お子様のプライバシー</h2>
+    <p>本アプリは、13歳未満のお子様から意図的に個人情報を収集することはありません。</p>
+  </div>
+
+  <div class="card fade-in">
+    <h2>5. プライバシーポリシーの変更</h2>
+    <p>本ポリシーは予告なく変更される場合があります。変更後のポリシーは本ページに掲載した時点で効力を生じます。</p>
+  </div>
+
+  <div class="card fade-in">
+    <h2>6. お問い合わせ</h2>
+    <p>本ポリシーに関するお問い合わせは下記までご連絡ください。</p>
+    <p><strong>メール:</strong> takn.factory@gmail.com</p>
+  </div>
+
+  <footer>
+    <a href="./">トップページに戻る</a>
+  </footer>
+
+</div>
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.15 });
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
